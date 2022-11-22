@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+
+/* Media Queries
+WHEN I resize the page or view the site on various screens and devices
+THEN I am presented with a responsive layout that adapts to my viewport */
+@media screen and (max-width: 768px){
+    main {
+        width: 46%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    main {
+        width: 92%;
+    }
+}
