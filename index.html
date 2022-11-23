@@ -6,15 +6,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./Assets/style.css">
+    <title>Michael Weiss Portfolio</title>
 </head>
 
 <body>
 
     <header>
+        <h1>Michael Weiss</h1>
 <!--WHEN I load their portfolio
 THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them-->
         <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#links">Links</a></li>
+            </ul>
 <!--WHEN I click one of the links in the navigation
 THEN the UI scrolls to the corresponding section (see href id's in challenge 1)-->
 
@@ -28,12 +35,28 @@ THEN the UI scrolls to a section with titled images of the developer's applicati
     
     <main>
 
-        <section class="About-Me">
+        <img id="headshot" src="./Assets/Images/Portfolio-Headshot-small.jpg" alt="Picture of Michael Weiss">
 
+        <section id="about" class="main-section"><br><br><br>
+            <h2>About Me</h2><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem fugit suscipit ducimus 
+                repellat. Officiis quas eum et repellat praesentium fuga voluptate dolor suscipit est quidem maxime omnis vitae, architecto eos!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem fugit suscipit ducimus 
+                repellat. Officiis quas eum et repellat praesentium fuga voluptate dolor suscipit est quidem maxime omnis vitae, architecto eos!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem fugit suscipit ducimus 
+                repellat. Officiis quas eum et repellat praesentium fuga voluptate dolor suscipit est quidem maxime omnis vitae, architecto eos!</p>
+        </section><br>
 
-        </section>
+        <section id="projects" class="main-section">
+            <h2>Completed Projects</h2>
+            <img class="project-box" src="./Assets/Images/study-guide.png" alt="logo of cat in bowtie">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem fugit suscipit ducimus 
+                repellat. Officiis quas eum et repellat praesentium fuga voluptate dolor suscipit est quidem maxime omnis vitae, architecto eos!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem fugit suscipit ducimus 
+                repellat. Officiis quas eum et repellat praesentium fuga voluptate dolor suscipit est quidem maxime omnis vitae, architecto eos!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem fugit suscipit ducimus 
+                repellat. Officiis quas eum et repellat praesentium fuga voluptate dolor suscipit est quidem maxime omnis vitae, architecto eos!</p>
 
-        <section class="Projects">
 <!--WHEN I am presented with the developer's first application
 THEN that application's image should be larger in size than the others-->
 
@@ -41,9 +64,11 @@ THEN that application's image should be larger in size than the others-->
 THEN I am taken to that deployed application-->
         </section>
 
-        <aside class="My-Links">
-            <!--My links-->
-
+        <aside id="links" class="main-section">
+            <ul>
+                <li>GitHub:</li>
+                <li>LinkedIn</li>
+            </ul>
         </aside>
 
 
