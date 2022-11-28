@@ -14,26 +14,18 @@
 
     <header>
         <h1>Michael Weiss</h1>
-<!--WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them-->
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#links">Links</a></li>
+                <li><a href="#link">Links</a></li>
             </ul>
-<!--WHEN I click one of the links in the navigation
-THEN the UI scrolls to the corresponding section (see href id's in challenge 1)-->
-
-<!--WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications-->
         </nav>
-
     </header>
 
     <main>
         <h2>About Me</h2>
-        <section id="about" class="main-section">
+        <section id="about">
             <img id="headshot" src="./Assets/Images/Portfolio-Headshot-small.jpg" alt="Picture of Michael Weiss">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem fugit suscipit ducimus 
                 repellat. Officiis quas eum et repellat praesentium fuga voluptate dolor suscipit est quidem maxime omnis vitae, architecto eos!
@@ -41,38 +33,51 @@ THEN the UI scrolls to a section with titled images of the developer's applicati
                 repellat. Officiis quas eum et repellat praesentium fuga voluptate dolor suscipit est quidem maxime omnis vitae, architecto eos!
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem fugit suscipit ducimus 
                 repellat. Officiis quas eum et repellat praesentium fuga voluptate dolor suscipit est quidem maxime omnis vitae, architecto eos!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem fugit suscipit ducimus 
+                    repellat. Officiis quas eum et repellat praesentium fuga voluptate dolor suscipit est quidem maxime omnis vitae, architecto eos!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem fugit suscipit ducimus 
+                    repellat. Officiis quas eum et repellat praesentium fuga voluptate dolor suscipit est quidem maxime omnis vitae, architecto eos!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem fugit suscipit ducimus 
+                    repellat. Officiis quas eum et repellat praesentium fuga voluptate dolor suscipit est quidem maxime omnis vitae, architecto eos!</p>
         </section>
 
-        <section id="projects" class="main-section">
+        <section id="projects">
             <h2>Completed Projects</h2>
-            <img class="project-box" src="./Assets/Images/study-guide.png" alt="logo of cat in bowtie">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem fugit suscipit ducimus 
-                repellat. Officiis quas eum et repellat praesentium fuga voluptate dolor suscipit est quidem maxime omnis vitae, architecto eos!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem fugit suscipit ducimus 
-                repellat. Officiis quas eum et repellat praesentium fuga voluptate dolor suscipit est quidem maxime omnis vitae, architecto eos!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem fugit suscipit ducimus 
-                repellat. Officiis quas eum et repellat praesentium fuga voluptate dolor suscipit est quidem maxime omnis vitae, architecto eos!</p>
-
-<!--WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others-->
-
-<!--WHEN I click on the images of the applications
-THEN I am taken to that deployed application-->
+                <div>
+                    <h3>Horiseon Social Solution Services Webpage</h3>
+                        <a href="https://veis1337.github.io/Horiseon-Social-Solution-Services-Webpage/" target="_blank"><img src="./Assets/Images/Horiseon-Project.png" alt="Horiseon Marketing Meeting"></a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem fugit suscipit ducimus 
+                                repellat. Officiis quas eum et repellat praesentium fuga voluptate dolor suscipit est quidem maxime omnis vitae, architecto eos!
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem fugit suscipit ducimus 
+                                repellat.</p>
+                </div>
+                <div>
+                    <h3>Bootcamp Pre-Work Study Guide</h3>
+                        <a href="https://github.com/Veis1337/prework-study-guide" target="_blank"><img src="./Assets/Images/study-guide.png" alt="cat in bowtie logo"></a>                     
+                            <p>Officiis quas eum et repellat praesentium fuga voluptate dolor suscipit est quidem maxime omnis vitae, architecto eos!
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem fugit suscipit ducimus 
+                                repellat. Officiis quas eum et repellat praesentium fuga voluptate dolor suscipit est quidem maxime omnis vitae, architecto eos!</p>
+                </div>
         </section>
 
         <aside id="links" class="main-section">
             <ul>
-                <li>GitHub:</li>
-                <li>LinkedIn</li>
+                <li>Where to find me --</li>
+                <li><a href="https://github.com/Veis1337" target="_blank">GitHub:<br> https://github.com/Veis1337 </a></li>
+                <li><a href="https://www.linkedin.com/in/michael-weiss-934351250/" target="_blank">LinkedIn</a></li>
+                <img id="kirby" src="./Assets/Images/kirby-dance.gif">
+                <li>Business Email:  Weissm09@gmail.com</li>
             </ul>
         </aside>
 
-
     </main>
 
-    <footer>
-
-
+    <footer id="link">
+        <ul>
+            <li><a href="https://github.com/Veis1337" target="_blank">GitHub: https://github.com/Veis1337 </a></li>
+            <li><a href="https://www.linkedin.com/in/michael-weiss-934351250/" target="_blank">LinkedIn</a></li>
+            <li>Business Email:  Weissm09@gmail.com</li>
+        </ul>
     </footer>
 
 </body>

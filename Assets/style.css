@@ -5,11 +5,12 @@
 }
 
 body {
+    color:#150622;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     font-family: Verdana, sans-serif;
-    background-color: #CBD18F;
+    background-color: #e5eaf5;
 }
 
 header {
@@ -20,7 +21,7 @@ header {
     align-items: center;
     color: #ffffff;
     padding: 1em;
-    background-color: #3A6B35;
+    background-color: #150622; 
 }
 header h1 {
     font-size: 3em;
@@ -40,47 +41,130 @@ a {
     text-decoration: none;
 }
 
-#headshot {
-    margin: 1em;
-    max-height: 400px;
-    max-width: 204px;
-    border: #3A6B35 solid 2px;
-}
-
-main {
-    margin: 0 1em 1em 1em;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     font-size: 2em;
-    color: #3A6B35;
+    color: #150622;
     font-family: Georgia, serif;
+}
+
+main h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 #about {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    border: solid #150622 4px;
+    margin: 2em 20em 2em 2em;
 }
 
+#about p {
+    margin: 3em;
+}
 
+#headshot {
+    margin: 1em;
+    max-height: 400px;
+    max-width: 204px;
+    border: #150622 solid 2px;
+}
 
+main a {
+    color:#150622;
+    text-decoration: none;
+}
 
+h3 {
+    margin: 1em;
+}
 
+#projects div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 2em 20em 2em 2em;
+    border: solid #150622 4px;
+    padding: 2em;
+    background-color: #e5eaf5;
+}
 
+#projects img {
+    border: solid #150622 2px;
+}
 
+#projects p {
+    margin: 3em; 
+}
 
-/* Media Queries
-WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport */
+#links {
+    position: fixed;
+    top: 10em;
+    right: .5em;
+    border: solid #150622 2px; 
+    background-color: #E3B448;
+    height: 60%;
+    width: 15%;
+}
+
+#links ul {
+    line-height: 2;
+    font-size: 1.1em;
+    list-style: none;
+    text-align: center;
+    margin: 5em 1em 5em 1em;
+}
+
+footer {
+    width: 100%;
+    color:#E3B448;
+    background-color: #150622;
+    padding: 1em;
+}
+
+footer ul li {
+    display: flex;
+    justify-content: center;
+    line-height: 2;
+}
+
 @media screen and (max-width: 768px){
     header {
         height: 50%;
         font-size: 10px;
     }
     main {
-        width: 92%;
+        width: 100%;
+    }
+    #links {
+        display: none;
+    }
+    #headshot {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20%
+    }
+    #about {
+        border: none;
+        display: block;
+        margin: 0;
+    }
+    #projects div {
+        display: block;
+        margin: 0;
+    }
+    #projects img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -89,10 +173,9 @@ THEN I am presented with a responsive layout that adapts to my viewport */
         font-size: 8px;
     }
     main {
-        width: 92%;
+        width: 100%;
     }
-    #headshot {
-        max-height: 200px;
-        max-width: 102px;
+    #projects p {
+        margin: 1em;
     }
 }
