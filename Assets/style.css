@@ -97,6 +97,9 @@ h3 {
 }
 
 #projects img {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
     border: solid #150622 2px;
 }
 
@@ -119,6 +122,8 @@ h3 {
 }
 
 #links ul {
+    display: flex;
+    flex-direction: column;
     line-height: 2;
     font-size: 1.5em;
     list-style: none;
@@ -181,5 +186,11 @@ footer ul li {
     }
     #projects p {
         margin: 1em;
+    }
+    #Horiseon {
+        width: 100%; 
+    }
+    #Prework {
+        width: 70%;
     }
 }
